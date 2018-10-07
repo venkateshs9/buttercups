@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
 
-  post '/v1/api/seller_api', to: 'sellers#seller_create'
+  post '/v1/api/product_api', to: 'products#product_create'
 
   get '/dashboard' => 'home#dashboard', as: :dashboard
 
