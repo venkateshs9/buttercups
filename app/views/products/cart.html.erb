@@ -1,0 +1,15 @@
+<%= link_to 'Back', dashboard_path, class: "btn btn-primary pull-right" %>
+
+<div class="container">
+	<div class="jumbotron">
+		<h2>Product Cart :</h2>
+		<% if @product.present? %>
+		<h3>Product Name : <%= @product.name %></h3>
+		<p>Price : <%= @product.cost_price %> INR</p>
+		<p>Discount : <%= @product.discount %> INR</p>
+		<p>GST : <%= @gst %> INR</p>
+		<p>Total Bill Amount : <%= @product.total_price %> INR </p>
+		<% end %>
+		<%= link_to 'Checkout', product_checkout_path(@product), class: "btn btn-primary checkout_btn" %>
+	</div>
+</div>

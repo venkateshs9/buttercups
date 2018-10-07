@@ -1,0 +1,12 @@
+
+/*CSS for forms*/
+
+ .form-control {
+    min-width: 0;
+    width: 500px;
+}
+
+.checkout_btn {
+	width: 200px;
+	margin-left: 400px;
+}

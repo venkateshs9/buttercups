@@ -1,0 +1,15 @@
+
+<div class="jumbotron text-center">
+User dashboard...!!!
+</div>
+
+<% if @products.present? %>
+<% @products.each do |p| %>
+<div class="d-block bg-info">
+  <h3>Product name :<%= p.name %></h3>
+  <p>Price :<%= p.cost_price %></p>
+  <p>Discount :<%= p.discount %></p>
+  <h3><%= link_to 'Buy Now', product_cart_path(p), class: "btn btn-primary" %></h3>
+</div>
+<% end %>
+<% end %>
